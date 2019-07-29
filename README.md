@@ -8,7 +8,6 @@
 数据集包括样本集（train.csv和test.csv）、标的属性表（listing_info.csv）、借款用户基础信息表（user_info.csv）、用户画像标签列表（user_taglist.csv）、借款用户操作行为日志表（user_behavior_logs.csv）和用户还款日志表（user_repay_logs.csv）。
 各数据集字段详情见：
 1. 超链接：[数据集](https://ai.ppdai.com/mirror/goToMirrorDetail?mirrorId=17&tabindex=1)
-
 3、评分标准：
 ![image](https://github.com/XunDong-Shi/ppd_mojing_4/blob/master/image/1.png)
 
@@ -56,4 +55,3 @@
 	采用部分相近数据集、加入宏观日期模型（1. 超链接：[冠军方案分享](https://zhuanlan.zhihu.com/p/75199206?utm_source=com.tencent.tim&utm_medium=social&utm_oi=555381879923224576)）
 	未来一个月需还款标的数量等特征、文本主题分布（1. 超链接：[亚军方案分享](https://zhuanlan.zhihu.com/p/74749772)）
 	多应用规则和二分类模型（1. 超链接：[季军方案分享](https://zhuanlan.zhihu.com/p/75234282?utm_source=com.tencent.tim&utm_medium=social&utm_oi=555381879923224576)）
-
