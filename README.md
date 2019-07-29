@@ -9,12 +9,12 @@
 数据集包括样本集（train.csv和test.csv）、标的属性表（listing_info.csv）、借款用户基础信息表（user_info.csv）、用户画像标签列表（user_taglist.csv）、借款用户操作行为日志表（user_behavior_logs.csv）和用户还款日志表（user_repay_logs.csv）。
 各数据集字段详情见：[数据集](https://ai.ppdai.com/mirror/goToMirrorDetail?mirrorId=17&tabindex=1)  
 ### 3、评分标准：  
-![image](https://github.com/XunDong-Shi/ppd_mojing_4/blob/master/image/1.png)  
+![评分标准](https://github.com/XunDong-Shi/ppd_mojing_4/blob/master/image/1.png)  
 
 ## 二、	总体思路  
 赛题的评分标准与资产组合密切相关，通过对拍拍贷App和业务的摸索，猜测资产组合的方式为拍拍贷新彩虹中每个出借人投资的散标组合（见图1），散标数量大约在10到100个，但因资产组合为拍拍贷核心投资技术，故无法得知其具体方式。  
-![image](https://github.com/XunDong-Shi/ppd_mojing_4/blob/master/image/2.png)  
-图1 推测的拍拍贷资产组合  
+![推测的拍拍贷资产组合  ](https://github.com/XunDong-Shi/ppd_mojing_4/blob/master/image/2.png)  
+
 因此，采用全数据集单个标的每月提前还款天数（0~31+逾期，总计33个分类）作为训练和测试的Label，以lightgbm为模型训练，用33分类的概率作为输出，并结合是否逾期的二分类模型对结果进行融合。  
 
 ## 三、	特征工程  
